@@ -42,7 +42,7 @@ def is_valid_game(universe_id):
     return False
 
 # Main loop
-for _ in range(100): # Try 20 random games
+for _ in range(100): # Try 100 random games
     place_id = random.randint(1000000, 1700000000)
     universe_id = get_universe_id(place_id)
     if universe_id and is_valid_game(universe_id):
